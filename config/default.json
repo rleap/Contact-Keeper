@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://rleap8137:Goolio8137@contactkeeper-lzkr4.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://rleap8137:Goolio8137@contactkeeper-lzkr4.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "**JOFJLSO8sslsd*8slksdflkajsfos*98s98fs89f9"
 }
