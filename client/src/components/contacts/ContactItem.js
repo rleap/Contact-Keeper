@@ -8,6 +8,10 @@ const ContactItem = ({ contact }) => {
 
   const { id, name, email, phone, type } = contact;
 
+  const onEdit = () => {
+    setCurrent(contact);
+  };
+
   const onDelete = () => {
     deleteContact(id);
     clearCurrent();
@@ -40,10 +44,7 @@ const ContactItem = ({ contact }) => {
         )}
       </ul>
       <p>
-        <button
-          className="btn btn-dark btn-sm"
-          onClick={() => setCurrent(contact)}
-        >
+        <button className="btn btn-dark btn-sm" onClick={onEdit}>
           Edit
         </button>
         <button className="btn btn-danger btn-sm" onClick={onDelete}>

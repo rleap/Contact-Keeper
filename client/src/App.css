@@ -308,8 +308,22 @@ img {
 }
 
 /* Forms */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-container h1 {
+  text-align: center;
+}
+
+.form-container label {
+  margin: 0;
+  padding: 0;
+}
+
 input {
-  margin: 1.2rem 0;
+  margin: 0 0 1.2rem 0;
 }
 
 input[type='radio'],
@@ -382,6 +396,22 @@ table th {
 
 .navbar .welcome span {
   margin-right: 0.6rem;
+}
+
+/* Animation (Add After) */
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms ease-in;
 }
 
 /* Mobile Styles */
